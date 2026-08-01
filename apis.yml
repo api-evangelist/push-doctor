@@ -1,8 +1,23 @@
 aid: push-doctor
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/push-doctor.png
 name: Push Doctor
-description: 'Push Doctor is a company surfaced as a portfolio company of partech and added to the API
-  Evangelist network as a stub for enrichment. Sector: Healthcare. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Push Doctor is a UK telehealth company offering video consultations with licensed UK GPs
+  via smartphone, describing itself as the UK''s first platform to provide video doctor consultations
+  on mobile. It serves both NHS patients and private paying customers, covering online GP appointments,
+  digital prescriptions, referrals and follow-up care. Headquartered in Manchester and backed by Partech,
+  Push Doctor operates as a consumer-facing telemedicine service; no public developer API, developer
+  portal, or SDK surface was found during enrichment probes.'
 url: https://raw.githubusercontent.com/api-evangelist/push-doctor/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +27,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Healthcare
+- Telehealth
+- Telemedicine
+- Online GP
+- Digital Health
+- Video Consultation
+- United Kingdom
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/push-doctor-domain-security.yml
 - type: Website
   url: https://www.pushdoctor.co.uk/
+- type: Support
+  url: https://www.pushdoctor.co.uk/contact-us
+- type: PrivacyPolicy
+  url: https://www.pushdoctor.co.uk/privacy-policy
+- type: TermsOfService
+  url: https://www.pushdoctor.co.uk/terms
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
